@@ -6,7 +6,8 @@ app.factory('beerService', function(){
       name: newBeer.name,
       style: newBeer.style,
       abv: newBeer.abv,
-      img: newBeer.image
+      img: newBeer.image,
+      rating: newBeer.rating
     }
     beers.push(beer);
   }
