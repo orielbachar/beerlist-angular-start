@@ -15,7 +15,9 @@
       </div>
 
       <!-- render beers here -->
-      <button ng-click="sortBy('newBeer.rating')">Sort</button>
+      <button class ="btn btn-success" ng-click="sortBy()">Sort</button>
+      <span class="sortorder" ng-show="propertyName === 'ranking'" ng-class="{reverse: reverse}"></span>
+
 
       <div ng-repeat="beer in brewry track by $index">
         <div class="row">

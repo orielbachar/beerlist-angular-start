@@ -8,7 +8,9 @@ app.controller('MainCtrl', function($scope, beerService){
     beerService.removeBeer(index)
   }
   $scope.rating = ["1", "2", "3","4","5"];
-  $scope.sortby = function(){
-    
+
+  $scope.sortBy = function(){
+    beerService.sortBy();
   }
+
 });
