@@ -36,7 +36,7 @@ app.get('/beers', function (req, res) {
 });
 
   app.delete('/beers/:id', function(req, res){    //no friking idea if this works
-    // console.log(req.params.id);
+    console.log(req.params.id);
     Beer.findByIdAndRemove(req.params.id, function(err,data) {
     if (err) throw err;
     res.send(data);
